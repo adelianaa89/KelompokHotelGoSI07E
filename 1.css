@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: instrument sans, instrument sans;
+    font-family: Arial, sans-serif;
     background-color: #f3f4f6;
 }
 
@@ -24,12 +24,18 @@ body {
 .navbar {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 90%; /* Mengurangi lebar navbar agar tidak terlalu ke kiri */
+    max-width: 1200px; /* Membatasi lebar maksimum */
+    margin: auto; /* Membuat navbar berada di tengah */
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Memberi jarak antara kiri dan kanan */
+    align-items: center;
     padding: 20px;
     color: white;
 }
+
 
 .nav-links, .nav-right {
     display: flex;
