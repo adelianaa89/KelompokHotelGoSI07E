@@ -98,44 +98,5 @@
                 </article>         
         </div>
     </section>
-
-    <!--Form Login dan Register-->
-
-    <section>
-        <a href="#" onclick="showModal()">LOGIN</a>
-        <div id="authModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Login / Register</h2>
-                <form action="dashboard.php" method="POST">
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" required>
-                    
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" required>
-                    
-                    <label>
-                        <input type="radio" name="auth_type" value="login" checked> Login
-                    </label>
-                    <label>
-                        <input type="radio" name="auth_type" value="register"> Register
-                    </label>
-        
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        function showModal() {
-            document.getElementById('authModal').style.display = 'block';
-        }
-        
-        function closeModal() {
-            document.getElementById('authModal').style.display = 'none';
-        }
-    </script>
-        
 </body>
 </html>
